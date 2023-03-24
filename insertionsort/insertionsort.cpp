@@ -1,39 +1,29 @@
 #include <iostream>
 using namespace std;
 
-int arr[20];
-int n;
+int arr[20];        
+int n;              
 
-void input() {
-	while (true) {
-		cout << " masukan jumlah data pada array : ";
-		cin >> n;
+void input()
+{   
+    while (true)
+    {
+        cout << "masukan jumalah data pada array : ";      
+        cin >> n;                                          
 
-		if (n <= 20) {
-			break;
-		}
-		else
-		{
-			cout << "\nArray yang anda masukkan maksimal 20 elemen.\n";
-		}
-	}
-	cout << endl;
-	cout << "======================" << endl;
-	cout << " Masukan Element Array" << endl;
-	cout << "======================" << endl;
+        if (n <= 20)
+        {   
+            break;
 
-	for (int i = 0; i < n; i++)
-	{
-		cout << "data ke-n" << (i + 1) << ":";
-		cin >> arr[i];
-	}
-}
+        }
+        else
+        {
+            cout << "\nArray yang anda masukan maksimal 20 elemen. \n";     
+        }
+    }
+    cout << endl;
+    cout << "========================" << endl;
+    cout << "masukan elemen array" << endl;
+    cout << "========================" << endl;
 
-void insertionsort()
-{
 
-	int temp;       
-	int j;          
-
-	for (int i = 1; i < n; i++)   
-	{
